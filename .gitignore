@@ -1,0 +1,19 @@
+# local dev database and logs
+.dev/
+
+# secrets
+.env
+.env.*
+!.env.example
+
+# dependencies and build output
+node_modules/
+.next/
+coverage/
+*.tsbuildinfo
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

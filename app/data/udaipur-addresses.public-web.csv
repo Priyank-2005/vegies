@@ -1,0 +1,36 @@
+address,lat,lng,kind,source
+"No 1/TA/25 Hiran Magri, Sector 5 Udaipur, Rajasthan - 313002",24.5652837,73.7245952,lab,"Business listing (Dr Lal PathLabs centre page): address and map pin as published by the business; the pin is a reference, not surveyed"
+"Plot No 895 Sector3, Hiran Magri Udaipur, Rajasthan - 313002 near Vikas Hospital",24.57666952,73.72593092,lab,"Business listing (Dr Lal PathLabs centre page): address and map pin as published by the business; the pin is a reference, not surveyed"
+"Plot No 421, Hiran Magri, Girwa Sector 6 Udaipur - 313001 opposite Satellite Hospital",24.5592673,73.7222993,lab,"Business listing (Dr Lal PathLabs centre page): address and map pin as published by the business; the pin is a reference, not surveyed"
+"No 24C, Chetak Circle Madhuban Udaipur, Rajasthan - 313001 opp GPO",24.5923222,73.6918079,lab,"Business listing (Dr Lal PathLabs centre page): address and map pin as published by the business; the pin is a reference, not surveyed"
+"No 1, Agrawal Katla Bata Val Gali Udaipur, Rajasthan - 313001 inside Surajpole",24.5794877,73.6949916,lab,"Business listing (Dr Lal PathLabs centre page): address and map pin as published by the business; the pin is a reference, not surveyed"
+"Shop No 1A, Girwa, Sector 14, Udaipur - 313002 near Primary Health Centre",24.54068947,73.68929291,lab,"Business listing (Dr Lal PathLabs centre page): address and map pin as published by the business; the pin is a reference, not surveyed"
+"Plot No 287, Block A, Main Road, Girwa, VIP Colony, Udaipur - 313002 opposite Jainam Electro Plaza",24.5494861,73.7118913,lab,"Business listing (Dr Lal PathLabs centre page): address and map pin as published by the business; the pin is a reference, not surveyed"
+"No 5, Devali, Girwa, Udaipur - 313001 near Khushboo Medical Store",24.5323746,73.6799671,lab,"Business listing (Dr Lal PathLabs centre page): address and map pin as published by the business; the pin is a reference, not surveyed"
+City Palace Udaipur,24.576,73.683,landmark,"Wikipedia article coordinates (precision about 100-500 m; a reference, not surveyed)"
+Jagdish Temple Udaipur,24.579834,73.68386083,landmark,"Wikipedia article coordinates (precision about 100-500 m; a reference, not surveyed)"
+Saheliyon ki Bari Udaipur,24.60277778,73.68527778,landmark,"Wikipedia article coordinates (precision about 100-500 m; a reference, not surveyed)"
+Udaipur City railway station NH-8 Jawahar Nagar,24.5685354,73.6998224,landmark,"Wikipedia article coordinates (precision about 100-500 m; a reference, not surveyed)"
+Maharana Pratap Airport Dabok Udaipur,24.617556,73.89444,landmark,"Wikipedia article coordinates (precision about 100-500 m; a reference, not surveyed)"
+"Plot No-07, Durga Nursery Road, Paneri Bhawan, Main College Road, Udaipur",,,store,"Apollo Pharmacy store list: address text as published, no coordinates"
+"317-A, Ambamata Scheme, near Satellite Hospital, Udaipur Rajasthan - 313001",,,store,"Apollo Pharmacy store list: address text as published, no coordinates"
+"Shop No-03, Sector 14 C.A. Circle, Hiran Magri, Udaipur Rajasthan - 313002",,,store,"Apollo Pharmacy store list: address text as published, no coordinates"
+"G-1, Plot No-2, 100Ft Road, Shobhagpura, near Royal Hotel, Udaipur Rajasthan - 313001",,,store,"Apollo Pharmacy store list: address text as published, no coordinates"
+"Plot No 10 & 11, near Shobhagpura Circle, in front of JK Paras Hospital, Udaipur Rajasthan - 313001",,,store,"Apollo Pharmacy store list: address text as published, no coordinates"
+"Shreenidhi, Pathon Ki Magri, Subhash Nagar, adjoining Canara Bank, near Sevashram Circle, Udaipur Rajasthan - 313001",,,store,"Apollo Pharmacy store list: address text as published, no coordinates"
+"G-1, Shobhagpura-DPS Road, near Ceremony Resort, Udaipur Rajasthan - 313001",,,store,"Apollo Pharmacy store list: address text as published, no coordinates"
+"2KH-21, Main Road, Sector-5, Hiran Magri, Udaipur",,,store,"Apollo Pharmacy store list: address text as published, no coordinates"
+"Shop No-01/49, Hiran Magri Sec-03, Udaipur",,,store,"Apollo Pharmacy store list: address text as published, no coordinates"
+"Shop No-01, Aggarwal Iron & Builders, Fatehpura, Bedla Road, Udaipur",,,store,"Apollo Pharmacy store list: address text as published, no coordinates"
+"Plot No-194, Sec-11, Hiran Magri, Udaipur",,,store,"Apollo Pharmacy store list: address text as published, no coordinates"
+"Geetanjali Medicity, Hiranmagri Extension, Manwakhera, NH-8 Bypass, near Eklingpura Chouraha, Udaipur Rajasthan - 313002",,,hospital,Hospital listings (WHO SEARO directory and others): address text; pincode differs between listings
+Pratap Nagar Udaipur,,,locality,A locality name only: how customers often start
+Bhupalpura Udaipur,,,locality,A locality name only (spelled Bhopalpura on some listings)
+Shobhagpura Udaipur,,,locality,A locality name only
+Fatehpura Udaipur,,,locality,A locality name only
+हिरण मगरी सेक्टर 5 उदयपुर,24.5652837,73.7245952,variant,Hindi-script version of the Sector 5 listing (same reference pin)
+चेतक सर्किल मधुबन उदयपुर,24.5923222,73.6918079,variant,Hindi-script version of the Madhuban listing (same reference pin)
+शोभागपुरा सर्कल उदयपुर,,,variant,Hindi-script version of the Shobhagpura Circle store
+hiran magri sec 3 plot 895 udaypur,24.57666952,73.72593092,variant,Short form with a misspelling of the Sector 3 listing (same reference pin)
+chetak circal madhuban udaipur opp gpo,24.5923222,73.6918079,variant,Misspelling of the Madhuban listing (same reference pin)
+bata wali gali surajpole udaipur,24.5794877,73.6949916,variant,Different spelling of the Bata Val Gali listing (same reference pin)

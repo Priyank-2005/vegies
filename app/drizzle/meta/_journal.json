@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1792785655290,
+      "tag": "0000_initial_delivery_schema",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1792785657199,
+      "tag": "0001_ledger_guards",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1792865574624,
+      "tag": "0002_notification_dedupe",
+      "breakpoints": true
+    }
+  ]
+}

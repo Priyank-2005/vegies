@@ -1,0 +1,224 @@
+@import "tailwindcss";
+
+/*
+  Design tokens. A warm off-white page, a rich emerald brand, a near-black forest green for hero bands and the
+  header, and marigold for "fast" and the main call to action. Pairs below are chosen for WCAG AA text contrast
+  (re-check any new pair before use).
+*/
+:root {
+  --bg: #f6f5f0;
+  --surface: #ffffff;
+  --surface-2: #efede6;
+  --ink: #14211a;
+  --ink-muted: #5b675f; /* 5.5:1 on --bg */
+  --line: #e4e1d8;
+  --line-strong: #cfcbbf;
+  --brand: #0b7a45; /* white text 5.5:1 */
+  --brand-hover: #086339;
+  --brand-ink: #ffffff;
+  --brand-soft: #e2f3e9;
+  --brand-bright: #14a05a;
+  --brand-deep: #053b27; /* header, hero, footer */
+  --brand-deeper: #03281a;
+  --accent: #ffb703; /* marigold */
+  --accent-hover: #f5a800;
+  --accent-ink: #2b2000;
+  --accent-soft: #fff1c2;
+  --danger: #c62828;
+  --danger-soft: #fdecea;
+  --focus: #1a56db;
+  --radius-ctl: 12px;
+  --radius-card: 18px;
+  --shadow-card: 0 1px 2px rgba(20, 33, 26, 0.04), 0 4px 14px rgba(20, 33, 26, 0.05);
+  --shadow-pop: 0 10px 30px rgba(20, 33, 26, 0.16);
+  --orb: rgba(255, 255, 255, 0.4);
+}
+
+:root[data-theme="dark"] {
+  --bg: #0c1410;
+  --surface: #131d17;
+  --surface-2: #1a2620;
+  --ink: #eaf1ec;
+  --ink-muted: #9fb0a5;
+  --line: #243229;
+  --line-strong: #37493d;
+  --brand: #3fcf86;
+  --brand-hover: #5ad99b;
+  --brand-ink: #04200f;
+  --brand-soft: #14301f;
+  --brand-bright: #2fbd74;
+  --brand-deep: #08261a;
+  --brand-deeper: #051a11;
+  --accent: #ffc233;
+  --accent-hover: #ffcd57;
+  --accent-ink: #1a1200;
+  --accent-soft: #33290d;
+  --danger: #f28b82;
+  --danger-soft: #3a1d19;
+  --focus: #8ab4f8;
+  --shadow-card: none;
+  --shadow-pop: 0 10px 30px rgba(0, 0, 0, 0.55);
+  --orb: rgba(255, 255, 255, 0.06);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0c1410;
+    --surface: #131d17;
+    --surface-2: #1a2620;
+    --ink: #eaf1ec;
+    --ink-muted: #9fb0a5;
+    --line: #243229;
+    --line-strong: #37493d;
+    --brand: #3fcf86;
+    --brand-hover: #5ad99b;
+    --brand-ink: #04200f;
+    --brand-soft: #14301f;
+    --brand-bright: #2fbd74;
+    --brand-deep: #08261a;
+    --brand-deeper: #051a11;
+    --accent: #ffc233;
+    --accent-hover: #ffcd57;
+    --accent-ink: #1a1200;
+    --accent-soft: #33290d;
+    --danger: #f28b82;
+    --danger-soft: #3a1d19;
+    --focus: #8ab4f8;
+    --shadow-card: none;
+    --shadow-pop: 0 10px 30px rgba(0, 0, 0, 0.55);
+    --orb: rgba(255, 255, 255, 0.06);
+  }
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-muted: var(--ink-muted);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-brand: var(--brand);
+  --color-brand-hover: var(--brand-hover);
+  --color-brand-ink: var(--brand-ink);
+  --color-brand-soft: var(--brand-soft);
+  --color-brand-bright: var(--brand-bright);
+  --color-brand-deep: var(--brand-deep);
+  --color-brand-deeper: var(--brand-deeper);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-soft: var(--accent-soft);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+  --radius-ctl: var(--radius-ctl);
+  --radius-card: var(--radius-card);
+  --shadow-card: var(--shadow-card);
+  --shadow-pop: var(--shadow-pop);
+  --font-sans: var(--font-jakarta), var(--font-hind), system-ui, sans-serif;
+}
+
+html {
+  color-scheme: light dark;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-jakarta), var(--font-hind), system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Devanagari needs a little more line height than Latin to avoid clipped matras. */
+:lang(hi),
+.deva {
+  font-family: var(--font-hind), var(--font-jakarta), system-ui, sans-serif;
+  line-height: 1.45;
+}
+
+h1,
+h2,
+h3 {
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: var(--brand);
+}
+
+/* Native select with a custom caret, consistent with the inputs. */
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%235b675f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  padding-right: 32px;
+}
+
+.scrollbar-none {
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Soft dotted texture used behind banners. */
+.bg-dots {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.14) 1.2px, transparent 1.2px);
+  background-size: 18px 18px;
+}
+
+@keyframes skeleton {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+.skeleton {
+  background: linear-gradient(90deg, var(--surface-2) 25%, var(--line) 37%, var(--surface-2) 63%);
+  background-size: 200% 100%;
+  animation: skeleton 1.4s ease infinite;
+  border-radius: var(--radius-ctl);
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+.float-slow {
+  animation: float 5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
